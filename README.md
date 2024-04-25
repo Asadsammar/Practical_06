@@ -1,40 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Laporan Praktikum
 
-## Getting Started
+|  | Pemrograman Berbasis Framework 2024 |
+|--|--|
+| NIM |  2141720269|
+| Nama |  Muhammad Asad |
+| Kelas | TI - 3I |
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![Screenshot](assets/01.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Screenshot](assets/02.png)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+![Screenshot](assets/03.png)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+![Screenshot](assets/04.png)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+![Screenshot](assets/05.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![Screenshot](assets/06.png)
 
-## Learn More
+![Screenshot](assets/07.png)
 
-To learn more about Next.js, take a look at the following resources:
+## Assignment Answers
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. import { useEffect } from "react"; is used to import the useEffect hook from the React library. useEffect is a hook that lets you perform side effects in function components. It is like a combination of componentDidMount, componentDidUpdate, and componentWillUnmount lifecycle methods in class components.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. If you remove useEffect from your component, any code within that useEffect will not be executed. This could lead to different behaviors depending on what the useEffect is doing. For example, if it's used for fetching data when the component mounts, the data will not be fetched.
 
-## Deploy on Vercel
+3. In JSX, which is a syntax extension for JavaScript used by React, you can't use the class keyword because it's a reserved word in JavaScript. Instead, you use className to add CSS classes to JSX elements.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Yes, the store in Next.js can store many Redux reducers. You can combine them using the combineReducers function from Redux.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. The store.js file is typically where you create your Redux store. This is where you'd combine your reducers, apply middleware, and possibly add support for the Redux DevTools extension.
+
+6. const { isLogin } = useSelector((state) => state.auth); This line is using the useSelector hook from react-redux to access the auth state from the Redux store. It's extracting the isLogin property from the auth state.
+
+7. const {totalCounter} = useSelector((state) => state.counter); This line is similar to the previous one, but it's extracting the totalCounter property from the counter state in the Redux store.
